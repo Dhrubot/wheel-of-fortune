@@ -34,3 +34,19 @@ body {
 .button:hover {
     opacity: 0.8;
   }
+
+.blur {
+    animation: blur 10s;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(1.5px)
+    }
+    80% {
+        filter: blur(0.5px)
+    }
+    100% {
+        filter: blur(0)
+    }
+}
