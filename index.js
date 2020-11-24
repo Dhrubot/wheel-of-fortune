@@ -1,16 +1,19 @@
 (function() {
     const wheel = document.querySelector('.wheel')
-    const startbutton = document.querySelector('.button')
+    const startButton = document.querySelector('.button')
     let deg = 0
 
-    startbutton.addEventListener('click', () => {
-        startbutton.style.pointerEvents = 'none'
+    startButton.addEventListener('click', () => {
+        startButton.style.pointerEvents = 'none'
         deg = Math.floor(5000 + Math.random() * 5000)
-        wheel.style.transition = 'all 10s ease-out'
+        wheel.style.transition = 'all 8s ease-out'
         wheel.style.transform = `rotate(${deg}deg)`
     })
 
     wheel.addEventListener('transitionend', () => {
-
+        startButton.style.pointerEvents = 'auto'
+        wheel.style.transition = 'none'
+        const actualDeg = deg %  360
+        wheel.style.transform = `rotate(${actualDeg}deg)`
     })
 })()

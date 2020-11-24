@@ -18,7 +18,7 @@ body {
 
 .marker {
     position: absolute;
-    width: 60px;
+    width: 40px;
     left: 172px;
     top: -10px;
     z-index: 2;
