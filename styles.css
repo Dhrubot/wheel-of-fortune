@@ -1,4 +1,9 @@
 
+body {
+    background-color: rgb(118, 184, 123);
+}
+
+
 .app {
     width: 400px;
     height: 400px;
@@ -17,4 +22,15 @@
     left: 172px;
     top: -10px;
     z-index: 2;
+  }
+
+.button {
+    display: block;
+    width: 250px;
+    margin: 40px auto;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
   }
